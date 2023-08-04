@@ -53,5 +53,20 @@ public class ItemService {
         return itemRepositories.findByOwner(owner);
     }
 
+    public List<Item> findAllByItemNameStartsWith(String name){
+        return itemRepositories.findAllByItemNameStartsWith(name);
+    }
+    public List<Item> findAllByItemNameEndingWith(String name){
+        return itemRepositories.findAllByItemNameEndingWith(name);
+    }
+    public List<Item> findDistinctByItemName(String name){
+        return itemRepositories.findDistinctByItemName(name);
+    }
+    public List<Item> findAllOrderByItemName(String s){
+        return itemRepositories.findAllOrderByItemName(s);
+    }
+    public List<Item> findAllByOrderByOwnerAsc(){
+        return itemRepositories.findAllByOrderByOwnerAsc();
+    }
 
 }

@@ -63,10 +63,26 @@ public class PeopleService {
 
 
 
+    public List<Person> findAllByNameContains(String name) {
+        return peopleRepositories.findAllByNameContains(name);
+    }
+
+    public List<Person> findAllByOrderByAge() {
+        return peopleRepositories.findAllByOrderByAge();
+    }
 
 
+    public Person findByAge(int id) {
+        return peopleRepositories.findByAge(id);
+    }
 
+    public List<Person> findAllByOrderByEmail() {
+        return peopleRepositories.findAllByOrderByEmail();
+    }
 
+    public Person findAllByEmailEndingWith(String start) {
+        return peopleRepositories.findAllByEmailEndingWith(start);
+    }
 
 
 
